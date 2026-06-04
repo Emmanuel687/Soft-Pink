@@ -16,10 +16,11 @@ export const Route = createFileRoute("/contact")({
       { name: "description", content: "Visit Lashes by Shazz at Silver Pool Suites, Jabavu Lane, Kilimani, Hurlingham, Nairobi. Call or email to book." },
       { property: "og:title", content: "Contact Lashes by Shazz" },
       { property: "og:description", content: "Get in touch to book your lash or microshading appointment." },
+      { property: "og:url", content: "https://soft-pink-lashes.lovable.app/contact" },
       { property: "og:image", content: studioReception.url },
     ],
     links: [
-      { rel: "canonical", href: "/contact" },
+      { rel: "canonical", href: "https://soft-pink-lashes.lovable.app/contact" },
     ],
   }),
   component: Contact,

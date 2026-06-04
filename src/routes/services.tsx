@@ -13,10 +13,36 @@ export const Route = createFileRoute("/services")({
       { name: "description", content: "Classic, hybrid, volume and mega volume lash extensions, plus microshading. Book your appointment at Lashes by Shazz, Nairobi." },
       { property: "og:title", content: "Services — Lashes by Shazz" },
       { property: "og:description", content: "Premium lash extensions and microshading services in Nairobi." },
+      { property: "og:url", content: "https://soft-pink-lashes.lovable.app/services" },
       { property: "og:image", content: lashCloseup2.url },
     ],
     links: [
-      { rel: "canonical", href: "/services" },
+      { rel: "canonical", href: "https://soft-pink-lashes.lovable.app/services" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            "Classic Lashes",
+            "Hybrid Lashes",
+            "Volume Lashes",
+            "Mega Volume Lashes",
+            "Microshading",
+          ].map((name) => ({
+            "@type": "Service",
+            "name": name,
+            "provider": {
+              "@type": "BeautySalon",
+              "name": "Lashes by Shazz",
+              "url": "https://soft-pink-lashes.lovable.app/",
+            },
+            "areaServed": "Nairobi",
+            "serviceType": name,
+          })),
+        }),
+      },
     ],
   }),
   component: Services,

@@ -1,0 +1,9 @@
+# Lashes by Shazz
+
+> Premium semi-permanent lash extensions and microshading studio in Kilimani, Hurlingham, Nairobi. Hygiene-first artistry by certified lash technicians.
+
+## Pages
+
+- [Home](/): About the studio, values, and overview of Lashes by Shazz.
+- [Services](/services): Classic, Hybrid, Volume, and Mega Volume lash extensions, plus Microshading.
+- [Contact](/contact): Studio address, phone, email, map, and online booking form.

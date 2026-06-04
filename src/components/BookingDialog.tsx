@@ -36,8 +36,8 @@ export function BookingDialog({ service, trigger }: { service: string; trigger?:
             <Input id="phone" type="tel" required value={form.phone} onChange={e => setForm({ ...form, phone: e.target.value })} />
           </div>
           <div>
-            <Label>Service of interest</Label>
-            <Input value={service} disabled />
+            <Label htmlFor="service">Service of interest</Label>
+            <Input id="service" value={service} disabled readOnly />
           </div>
           <div className="grid grid-cols-2 gap-3">
             <div>
