@@ -15,11 +15,34 @@ export const Route = createFileRoute("/")({
       { name: "description", content: "Hygiene-first lash extensions and microshading in Kilimani, Nairobi. Classic, hybrid, volume, and mega volume lashes by certified professionals." },
       { property: "og:title", content: "Lashes by Shazz — Premium Lash Studio, Nairobi" },
       { property: "og:description", content: "Elegant, expertly-applied lash extensions and microshading." },
+      { property: "og:url", content: "https://soft-pink-lashes.lovable.app/" },
       { property: "og:image", content: lashCloseup1.url },
     ],
     links: [
       { rel: "preload", as: "image", href: lashCloseup1.url, fetchpriority: "high" },
-      { rel: "canonical", href: "/" },
+      { rel: "canonical", href: "https://soft-pink-lashes.lovable.app/" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BeautySalon",
+          "name": "Lashes by Shazz",
+          "image": lashCloseup1.url,
+          "url": "https://soft-pink-lashes.lovable.app/",
+          "telephone": "+254769781771",
+          "email": "sales@lashesbyshazz.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Silver Pool Suites, Jabavu Lane",
+            "addressLocality": "Kilimani, Hurlingham, Nairobi",
+            "addressCountry": "KE",
+          },
+          "priceRange": "$$",
+          "areaServed": "Nairobi",
+        }),
+      },
     ],
   }),
   component: Home,
@@ -61,7 +84,7 @@ function Home() {
         ].map(({ icon: Icon, t, d }) => (
           <div key={t} className="text-center p-6">
             <Icon className="w-10 h-10 mx-auto text-primary" strokeWidth={1.4} />
-            <h3 className="font-display text-2xl mt-4">{t}</h3>
+            <h2 className="font-display text-2xl mt-4">{t}</h2>
             <p className="text-muted-foreground mt-2 text-sm leading-relaxed">{d}</p>
           </div>
         ))}
