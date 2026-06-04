@@ -37,9 +37,14 @@ function Contact() {
   return (
     <SiteLayout>
       <section className="relative">
-        <img src={studioReception.url} alt="Lashes by Shazz studio reception" className="w-full h-64 md:h-80 object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background/90 flex items-end">
+        <img src={studioReception.url} alt="Lashes by Shazz studio reception" className="w-full h-64 md:h-80 object-cover object-center" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/40 to-background/90 flex items-end">
           <div className="max-w-6xl mx-auto w-full px-6 pb-8">
+            <div className="mb-3">
+              <span className="inline-block px-4 py-1.5 bg-background/80 backdrop-blur-sm rounded-full text-primary font-display text-sm md:text-base tracking-wide border border-primary/20 shadow-sm">
+                Lashes by Shazz
+              </span>
+            </div>
             <h1 className="font-display text-5xl md:text-6xl">Contact & Booking</h1>
           </div>
         </div>
