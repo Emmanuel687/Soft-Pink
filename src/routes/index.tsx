@@ -69,7 +69,6 @@ function Home() {
           </div>
           <div className="relative">
             <img src={lashCloseup1.url} alt="Close-up of classic lash extensions" width={640} height={800} fetchPriority="high" className="rounded-2xl shadow-2xl aspect-[4/5] object-cover w-full" />
-            <img src={lashCloseup2.url} alt="Volume lash extensions detail" width={320} height={400} loading="lazy" className="absolute -bottom-8 -left-8 w-1/2 rounded-2xl shadow-xl border-4 border-background hidden md:block" />
           </div>
         </div>
       </section>
