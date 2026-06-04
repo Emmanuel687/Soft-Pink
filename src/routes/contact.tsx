@@ -18,6 +18,9 @@ export const Route = createFileRoute("/contact")({
       { property: "og:description", content: "Get in touch to book your lash or microshading appointment." },
       { property: "og:image", content: studioReception.url },
     ],
+    links: [
+      { rel: "canonical", href: "/contact" },
+    ],
   }),
   component: Contact,
 });

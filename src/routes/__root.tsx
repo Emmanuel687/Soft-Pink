@@ -47,7 +47,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lashes by Shazz — Premium Lash Extensions & Microshading, Nairobi" },
+      { title: "Lashes by Shazz — Premium Lash Studio" },
       { name: "description", content: "Elegant lash extensions and microshading in Kilimani, Nairobi. Hygiene-first, professional lash artistry by Shazz." },
       { property: "og:title", content: "Lashes by Shazz — Premium Lash Extensions & Microshading, Nairobi" },
       { name: "twitter:title", content: "Lashes by Shazz — Premium Lash Extensions & Microshading, Nairobi" },
