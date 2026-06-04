@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
-import studioReception from "@/assets/studio-reception.asset.json";
+import studioReception from "@/assets/studio-reception-new.jpg.asset.json";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
