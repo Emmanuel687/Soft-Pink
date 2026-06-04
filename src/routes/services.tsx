@@ -56,7 +56,7 @@ function Services() {
         <div className="grid md:grid-cols-2 gap-8">
           {lashServices.map((s) => (
             <article key={s.name} className="bg-card rounded-2xl overflow-hidden shadow-sm border border-border flex flex-col">
-              <img src={s.image} alt={s.name} className="aspect-[5/3] object-cover w-full" />
+              <img src={s.image} alt={s.name} width={800} height={480} loading="lazy" className="aspect-[5/3] object-cover w-full" />
               <div className="p-6 flex-1 flex flex-col">
                 <h3 className="font-display text-2xl">{s.name}</h3>
                 <p className="text-muted-foreground mt-2 text-sm leading-relaxed flex-1">{s.desc}</p>
@@ -72,7 +72,7 @@ function Services() {
       <section className="max-w-6xl mx-auto px-6 py-16">
         <h2 className="font-display text-3xl border-b border-border pb-3 mb-8">Microshading</h2>
         <article className="bg-card rounded-2xl overflow-hidden shadow-sm border border-border grid md:grid-cols-2">
-          <img src={lashTechWork.url} alt="Microshading service" className="aspect-[5/4] md:aspect-auto object-cover w-full h-full" />
+          <img src={lashTechWork.url} alt="Microshading service" width={800} height={640} loading="lazy" className="aspect-[5/4] md:aspect-auto object-cover w-full h-full" />
           <div className="p-8 flex flex-col justify-center">
             <h3 className="font-display text-3xl">Microshading</h3>
             <p className="text-muted-foreground mt-3 leading-relaxed">

@@ -37,7 +37,7 @@ function Contact() {
   return (
     <SiteLayout>
       <section className="relative">
-        <img src={studioReception.url} alt="Lashes by Shazz studio reception" className="w-full h-64 md:h-80 object-cover object-center" />
+        <img src={studioReception.url} alt="Lashes by Shazz studio reception" width={1200} height={480} className="w-full h-64 md:h-80 object-cover object-center" />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/40 to-background/90 flex items-end">
           <div className="max-w-6xl mx-auto w-full px-6 pb-8">
             <div className="mb-3">
