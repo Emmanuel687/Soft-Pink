@@ -15,6 +15,9 @@ export const Route = createFileRoute("/services")({
       { property: "og:description", content: "Premium lash extensions and microshading services in Nairobi." },
       { property: "og:image", content: lashCloseup2.url },
     ],
+    links: [
+      { rel: "canonical", href: "/services" },
+    ],
   }),
   component: Services,
 });

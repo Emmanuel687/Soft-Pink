@@ -19,6 +19,7 @@ export const Route = createFileRoute("/")({
     ],
     links: [
       { rel: "preload", as: "image", href: lashCloseup1.url, fetchpriority: "high" },
+      { rel: "canonical", href: "/" },
     ],
   }),
   component: Home,
