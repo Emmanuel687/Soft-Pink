@@ -17,6 +17,9 @@ export const Route = createFileRoute("/")({
       { property: "og:description", content: "Elegant, expertly-applied lash extensions and microshading." },
       { property: "og:image", content: lashCloseup1.url },
     ],
+    links: [
+      { rel: "preload", as: "image", href: lashCloseup1.url, fetchpriority: "high" },
+    ],
   }),
   component: Home,
 });
