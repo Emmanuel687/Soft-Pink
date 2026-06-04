@@ -17,6 +17,9 @@ export const Route = createFileRoute("/")({
       { property: "og:description", content: "Elegant, expertly-applied lash extensions and microshading." },
       { property: "og:image", content: lashCloseup1.url },
     ],
+    links: [
+      { rel: "preload", as: "image", href: lashCloseup1.url, fetchpriority: "high" },
+    ],
   }),
   component: Home,
 });
@@ -42,8 +45,8 @@ function Home() {
             </div>
           </div>
           <div className="relative">
-            <img src={lashCloseup1.url} alt="Close-up of classic lash extensions" className="rounded-2xl shadow-2xl aspect-[4/5] object-cover w-full" />
-            <img src={lashCloseup2.url} alt="Volume lash extensions detail" className="absolute -bottom-8 -left-8 w-1/2 rounded-2xl shadow-xl border-4 border-background hidden md:block" />
+            <img src={lashCloseup1.url} alt="Close-up of classic lash extensions" width={640} height={800} fetchPriority="high" className="rounded-2xl shadow-2xl aspect-[4/5] object-cover w-full" />
+            <img src={lashCloseup2.url} alt="Volume lash extensions detail" width={320} height={400} loading="lazy" className="absolute -bottom-8 -left-8 w-1/2 rounded-2xl shadow-xl border-4 border-background hidden md:block" />
           </div>
         </div>
       </section>
@@ -67,9 +70,9 @@ function Home() {
       <section className="bg-secondary/40 py-20">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
           <div className="grid grid-cols-2 gap-4">
-            <img src={lashTechWork.url} alt="Lash technician at work" className="rounded-xl aspect-[3/4] object-cover row-span-2 shadow-lg" />
-            <img src={studioReception.url} alt="Lashes by Shazz studio reception" className="rounded-xl aspect-square object-cover shadow-lg" />
-            <img src={studioRoom.url} alt="Lashes by Shazz treatment room" className="rounded-xl aspect-square object-cover shadow-lg" />
+            <img src={lashTechWork.url} alt="Lash technician at work" width={600} height={800} loading="lazy" className="rounded-xl aspect-[3/4] object-cover row-span-2 shadow-lg" />
+            <img src={studioReception.url} alt="Lashes by Shazz studio reception" width={400} height={400} loading="lazy" className="rounded-xl aspect-square object-cover shadow-lg" />
+            <img src={studioRoom.url} alt="Lashes by Shazz treatment room" width={400} height={400} loading="lazy" className="rounded-xl aspect-square object-cover shadow-lg" />
           </div>
           <div>
             <p className="uppercase tracking-[0.3em] text-xs text-primary mb-4">About the studio</p>
